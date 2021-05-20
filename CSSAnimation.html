@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--用CSS实现图片切换和动画效果-->
+    <title>CSSAnimation</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background: red;
+            position: relative;
+            background-image: url('images/xuenai.jpg');
+            background-size:200px 200px;
+            -webkit-animation: mymove 5s infinite; /* Safari and Chrome */ 
+        }
+        @-webkit-keyframes mymove /* Safari and Chrome */
+        {
+            0% {
+                top: 0;
+                left: 0;
+                /*background: yellow;*/
+                background-image: url('images/xuenai.jpg');
+                background-size: 200px 200px;
+            }
+
+            25% {
+                top: calc(80vh);
+                left: 0;
+                /*background:blue;*/
+                background-image: url('images/1.jpg');
+                background-size: 200px 200px;
+            }
+
+            50% {
+                top: calc(80vh);
+                left: 1000px;
+                /*background:green;*/
+                background-image: url('images/2.jpg');
+                background-size: 200px 200px;
+            }
+
+            75% {
+                top: 0;
+                left: 1000px;
+                /*background:black;*/
+                background-image: url('images/3.jpg');
+                background-size: 200px 200px;
+            }
+
+            100% {
+                top: 0;
+                left: 0;
+                /*background: yellow;*/
+                background-image: url('images/xuenai.jpg');
+                background-size: 200px 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

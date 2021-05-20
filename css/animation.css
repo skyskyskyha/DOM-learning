@@ -1,0 +1,6 @@
+.blueball {
+    background-color: #0080ff; /* 蓝色 */
+    position: relative;
+    animation: forward 4s; /* 执行 forward 动画，耗时 4s */
+    font-size: 20px;
+}
